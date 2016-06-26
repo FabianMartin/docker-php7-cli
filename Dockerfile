@@ -21,6 +21,7 @@ RUN apt-key add /tmp/dotdeb.gpg \
 	php7.0-intl \
 	php7.0-json \
 	php7.0-ldap \
+	php7.0-mbstring \
 	php7.0-mcrypt \
 	php7.0-memcached \
 	php7.0-mysql \
@@ -32,8 +33,5 @@ RUN apt-key add /tmp/dotdeb.gpg \
 	&& rm -rf /tmp/*
 
 ADD timezone.ini /etc/php/7.0/cli/conf.d/
-
-WORKDIR /var/www
-VOLUME /var/www
 
 CMD ["/bin/bash"]
