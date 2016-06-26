@@ -29,6 +29,7 @@ RUN apt-key add /tmp/dotdeb.gpg \
 	php7.0-redis \
 	php7.0-sqlite3 \
 	php7.0-xsl \
+	php7.0-zip \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& rm -rf /tmp/*
 
