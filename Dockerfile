@@ -12,6 +12,7 @@ RUN apt-key add /tmp/dotdeb.gpg \
     && apt-get install -yqq \
 	ca-certificates \
 	php7.0-cli \
+	php7.0-bcmath \
 	php7.0-bz2 \
 	php7.0-curl \
 	php7.0-gd \
