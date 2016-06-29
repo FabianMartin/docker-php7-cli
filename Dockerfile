@@ -34,5 +34,3 @@ RUN apt-key add /tmp/dotdeb.gpg \
 	&& rm -rf /tmp/*
 
 ADD timezone.ini /etc/php/7.0/cli/conf.d/
-
-CMD ["/bin/bash"]
