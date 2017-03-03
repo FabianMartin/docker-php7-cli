@@ -2,8 +2,6 @@ FROM debian:jessie-slim
 
 ENV DEBIAN_FRONTEND noninteractive
 
-MAINTAINER Fabian Martin <mail@fabian-martin.de>
-
 ADD https://www.dotdeb.org/dotdeb.gpg /tmp/dotdeb.gpg
 ADD dotdeb.list /etc/apt/sources.list.d/dotdeb.list
 
